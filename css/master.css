@@ -1,0 +1,1089 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.section-one {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../css/img/10ff19bfcce118c2ad5cf64ebbe80311.jpg);
+  background-size: cover;
+}
+.overlay-1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.head-one {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(194, 193, 199, 0.7);
+  position: fixed;
+  z-index: 100;
+}
+.head-one img {
+  width: 130px;
+  height: 80px;
+  margin-left: 60px;
+  display: inline;
+}
+.list-1 {
+  display: inline;
+  float: right;
+  margin-right: 30px;
+}
+.list-1 li {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+.list-1 li a {
+  color: rgb(3, 3, 3);
+  text-decoration: none;
+  font-size: 30px;
+  text-transform: capitalize;
+  padding-top: 33px;
+  padding-bottom: 19px;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: color 0.3s ease-out, border-bottom 0.3s ease-in;
+  position: relative;
+}
+.list-1 li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #a18a6a;
+  transition: 1s;
+}
+.list-1 li a:hover {
+  background-color: rgba(240, 248, 255, 0.222);
+}
+.list-1 li a:hover::after {
+  width: 100%;
+  height: 2px;
+  right: 0;
+}
+.head-two {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(194, 193, 199, 0.7);
+  position: fixed;
+  margin-top: 80px;
+  opacity: 0;
+  transition: 1s ease;
+  z-index: 101;
+}
+.head-two:hover {
+  opacity: 1;
+}
+.list-2 {
+  display: inline;
+  float: left;
+  margin-left: 30px;
+}
+.list-2 li {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+.list-2 li a {
+  color: rgb(3, 3, 3);
+  text-decoration: none;
+  font-size: 25px;
+  text-transform: capitalize;
+  padding-top: 33px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: color 0.3s ease-out, border-bottom 0.3s ease-in;
+}
+.list-2 li a:hover {
+  color: #323432d4;
+  background-color: rgba(240, 248, 255, 0.222);
+  border-bottom: 3px solid #1c1c1c;
+}
+.head-two input {
+  width: 30%;
+  height: 40px;
+  float: right;
+  margin-right: 8%;
+  margin-top: 15px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  opacity: 0.7;
+  font-size: 20px;
+}
+.sec3 {
+  width: 75%;
+  height: 150px;
+  text-align: center;
+  font-size: 45px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sec4 .spa1 {
+  font-size: 60px;
+  letter-spacing: 3px;
+  color: #a18a6a;
+  font-weight: 600;
+}
+.ber1 span {
+  font-size: 60px;
+  letter-spacing: 3px;
+  color: #a18a6a;
+  font-weight: 500;
+}
+.sec4 .spa2 {
+  letter-spacing: 1px;
+}
+.sec3 .but1,
+.but2 {
+  width: 230px;
+  height: 50px;
+  font-size: 19px;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-left: 20px;
+  background-color: rgb(250, 240, 255);
+  color: black;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+.but2 {
+  background-color: transparent;
+  color: white;
+}
+.sec3 .but:hover {
+  opacity: 0.5;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+.section-two {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.content:hover::after {
+  height: 100%;
+  color: white;
+}
+/* //////////////////////////////////////////////////////////////////////////// */
+.on-prices {
+  width: 90%;
+  height: 50%;
+  background-color: rgba(194, 193, 199, 0.8);
+  text-align: center;
+  border-right: 5px solid #323432d4;
+  border-left: 5px solid #323432d4;
+  margin: 100px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  transition: 2s;
+}
+.on-prices::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 10px;
+  top: 0;
+  left: 0;
+  background-color: #323432c4;
+  transition: 4s ease;
+}
+.on-prices:hover::after {
+  width: 100%;
+}
+.on-prices:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.on-prices::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 10px;
+  bottom: 0;
+  right: 0;
+  background-color: #323432c4;
+  transition: 4s ease;
+}
+.on-prices:hover::before {
+  width: 100%;
+}
+.car-prices {
+  width: 30%;
+  height: 250px;
+  background-image: url(../css/img/r8.jpg);
+  background-size: cover;
+  color: white;
+  position: relative;
+
+  margin-top: 5%;
+  float: left;
+}
+.car-prices::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: 1s;
+  position: absolute;
+}
+.car-prices:hover::after {
+  height: 100%;
+  opacity: 1;
+}
+.pri1 {
+  background-image: url(../css/img/q3.jpg);
+  background-size: cover;
+}
+.offers {
+  width: 100%;
+  position: absolute;
+  color: #fff;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 99;
+  padding: 30px;
+}
+.offers i {
+  color: #a18a6a;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.offers h2 {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.offers p {
+  font-size: 19px;
+}
+.offers a {
+  text-decoration: none;
+  color: #a18a6a;
+  font-size: 17px;
+}
+.pri2 {
+  background-image: url(../css/img/s5\ cabrilet.jpg);
+  background-size: cover;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.pri {
+  background-image: url(../css/img/Audi\ TT.jpg);
+  background-size: cover;
+}
+.numbers {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 20px;
+  z-index: 222;
+}
+.num {
+  width: 30px;
+  height: 30px;
+  background-color: #a18a6a;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 440px;
+  padding-top: 2px;
+  z-index: 222;
+}
+.bers1 {
+  margin-left: 0px;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+.models-1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+/* ////////////////////////////////////--section-three---///////////////////////////////// */
+.models-car {
+  width: 90%;
+  height: 300px;
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+}
+.model1 {
+  width: 30%;
+  height: 250px;
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+}
+.models-car-2 {
+  width: 90%;
+  height: 300px;
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+}
+.mood1 {
+  width: 100%;
+  position: absolute;
+  color: #fff;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  opacity: 0;
+  transition: 2s ease;
+  border-radius: 10px;
+}
+.mood1:hover {
+  opacity: 1;
+}
+.offer-model {
+  background-color: #a18a6a;
+  width: 50px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  z-index: 555;
+}
+.heart {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  z-index: 555;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.heart i {
+  margin-top: 5px;
+  color: #908d8d;
+}
+.heart i:hover {
+  color: rgb(148, 3, 3);
+}
+
+.model14 {
+  background-image: url(../css/img/MY24---e-tron-GT---Front---Parked-1920x1080-.jpg);
+  background-size: cover;
+}
+.mood1 h2 {
+  margin-top: 40px;
+  padding-bottom: 10px;
+  color: #a18a6a;
+  text-transform: capitalize;
+}
+.mood1 p {
+  font-size: 19px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.mood1 i {
+  margin-top: 20px;
+  font-size: 25px;
+  color: #a18a6a;
+}
+.model11 {
+  background-image: url(../css/img/1920x1080_8-2017AudiR8V10plusexclusiveedition.jpg);
+  background-size: cover;
+}
+.model13 {
+  background-image: url(../css/img/MY25---Q5---Exterior---Front---Parked---1139.jpg);
+  background-size: cover;
+}
+.model12 {
+  background-image: url(../css/img/D5_MY25---SQ7---Rear---Parked---5416.jpg);
+  background-size: cover;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.model15 {
+  background-image: url(../css/img/A5-Coupe-Rear-Parked.jpg);
+  background-size: cover;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.model16 {
+  background-image: url(../css/img/A4---Front-Profile---Parked---2837.jpg);
+  background-size: cover;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+.section-four {
+  height: 100vh;
+}
+/* //////////////////////////////////////// */
+.experience-1 {
+  width: 95%;
+  height: 180px;
+  text-align: center;
+  margin: 100px auto;
+  position: relative;
+}
+.exp {
+  width: 30%;
+  margin-left: 40px;
+  height: 100%;
+  background-color: rgba(217, 217, 218, 0.8);
+  position: relative;
+  float: left;
+
+  border-top: 3px solid #323432d4;
+}
+.exp i {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  font-size: 35px;
+  color: #a18a6a;
+  z-index: 5555;
+  transition: 1s ease;
+}
+.exp h4 {
+  position: absolute;
+  top: 15px;
+  left: 60px;
+  font-size: 25px;
+  z-index: 5555;
+  transition: 1s ease;
+}
+.exp p {
+  width: 80%;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  text-align: left;
+  font-size: 18px;
+  z-index: 5555;
+  transition: 1s ease;
+}
+.exp::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: 1s ease;
+}
+.exp:hover::after {
+  width: 100%;
+  height: 100%;
+  bottom: 100%;
+  right: 0;
+  opacity: 1;
+  border-bottom: 5px solid #a18a6a;
+}
+
+.exp:hover h4 {
+  color: #ffffff;
+}
+.exp:hover p {
+  color: #c6c2c2;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+.section-five {
+  height: 100vh;
+  width: 100%;
+}
+.content-3 {
+  height: 80%;
+  background-color: rgba(217, 217, 218, 0.8);
+  padding: top 20px;
+  position: relative;
+}
+.hr-5 {
+  width: 150px;
+  height: 5px;
+  background-color: #a18a6a;
+  border: none;
+  border-radius: 50%;
+  margin-left: 100px;
+}
+.content-4 {
+  width: 40%;
+  height: 400px;
+  position: absolute;
+  top: 30%;
+  left: 90px;
+}
+.content-4 h2 {
+  font-size: 40px;
+}
+
+.par-audi {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.description {
+  font-size: 19px;
+}
+.description p {
+  margin-top: 10px;
+  font-weight: 450;
+}
+.par-audi span {
+  font-size: 30px;
+  color: #ae8c5b;
+}
+.description i {
+  color: #a18a6a;
+}
+.image-circle {
+  width: 450px;
+  height: 450px;
+  border: 3px solid #a18a6a;
+  border-radius: 50%;
+  background-image: url(../css/img/AUDT993.jpg);
+  background-size: cover;
+  position: absolute;
+  right: 70px;
+  top: 100px;
+}
+.small-circle div {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: inline-block;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.small-circle {
+  position: absolute;
+  right: 260px;
+  bottom: 85px;
+}
+.small-circle .small-circle1 {
+  background-color: #a18a6a;
+}
+.small-circle div:hover {
+  background-color: #a18a6a;
+}
+/* //////////////////////////////////////////////////////////////////////// */
+.section-sex {
+  width: 100%;
+  height: 80vh;
+}
+.img16 {
+  width: 100%;
+  height: 500px;
+  background-image: url(../css/img/DSC_1920x600.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+.overlay-6 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.content-7 {
+  width: 90%;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon-6 {
+  float: left;
+  margin-left: 230px;
+  margin-top: 60px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.icon-6 i {
+  font-size: 50px;
+  color: #a18a6a;
+  cursor: pointer;
+}
+.icon-6 i:hover {
+  color: rgb(73, 73, 73);
+}
+.icon-6 h3 {
+  color: white;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.icon-6 p {
+  color: #ffffff;
+  font-size: 19px;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+/* ////////////////////////////////////////////////////////////////////////////// */
+.section-seven,
+.section-ten {
+  width: 100%;
+  height: 100vh;
+}
+.address-7 {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.hr-7 {
+  width: 150px;
+  height: 5px;
+  background-color: #a18a6a;
+  border: none;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.content77 {
+  width: 90%;
+  height: 500px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.box7 {
+  width: 25%;
+  height: 450px;
+  position: relative;
+  margin-left: 60px;
+  float: left;
+  left: 55px;
+  background-image: url(../css/img/eba6fd733f110805b4591f4b01d0abe1.jpg);
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  transition: 1s ease;
+  border-bottom: 5px solid #927b5b;
+}
+.title7 {
+  font-size: 25px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-top: 15px;
+  z-index: 111;
+}
+.circle7 {
+  width: 140px;
+  height: 140px;
+  border: 2px solid #a18a6a;
+  margin: 15px auto;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  z-index: 100;
+  transition: 1s ease;
+}
+.price7 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+  top: 10px;
+  right: 46px;
+}
+.price77 {
+  right: 35px;
+}
+.del1 {
+  text-align: center;
+  margin: 5px auto;
+  line-height: 30px;
+  margin-top: 65px;
+  position: absolute;
+  left: 8px;
+  font-weight: 600;
+  font-size: 23px;
+}
+.par-37 {
+  width: 230px;
+  text-align: center;
+  margin: 5px auto;
+  line-height: 30px;
+  margin-top: 15px;
+}
+.inbut-7 input {
+  width: 180px;
+  height: 40px;
+  font-size: 19px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 20px auto;
+  letter-spacing: 2px;
+}
+.inbut-7 input:hover {
+  opacity: 0.6;
+}
+.overlay-7 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  z-index: 100;
+}
+.box7::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: 1s;
+  position: absolute;
+}
+.box7:hover::after {
+  height: 100%;
+  opacity: 1;
+}
+.box7:hover {
+  color: #d6ba93;
+}
+.box7:hover .circle7 {
+  border-color: white;
+}
+/* /////////////////////////////////////////////////////////////////////////////////// */
+.section-eight {
+  width: 100%;
+  height: 80vh;
+}
+.content-8 {
+  width: 100%;
+  height: 500px;
+  background-image: url(../css/img/MY24---Q5.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.overlay-8 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+.centar-8 {
+  color: white;
+  width: 75%;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* ---------------------------------------------------- */
+.Average,
+.Average2 {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.img18 {
+  background-image: url(../css/img/turbo.jpg);
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  border-radius: 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+}
+.text-8 {
+  position: absolute;
+  left: 130px;
+  top: 30px;
+}
+.par88 {
+  width: 50%;
+  position: absolute;
+  left: 130px;
+  top: 130px;
+  word-spacing: 2px;
+}
+.text-8 p {
+  color: #b4966d;
+  font-weight: 700;
+}
+.Average2 {
+  margin-left: 50%;
+}
+.img8 {
+  background-image: url(../css/img/339bbc25473a13c78ddaf6655b3ead36.jpg);
+  /* //////////////////////////////////////////////////////////////////////////////////// */
+}
+.section-nine {
+  width: 100%;
+  height: 90vh;
+  background-color: #e0e0e0;
+}
+.content-9 {
+  width: 90%;
+  height: 400px;
+  margin: 100px auto;
+}
+.box-19 {
+  width: 30%;
+  background-color: #9b9a9a;
+  float: left;
+  padding: 14px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+.boox19 {
+  margin: 0 5%;
+}
+.in-box {
+  width: 100%;
+  position: relative;
+}
+.in-box img {
+  width: 100%;
+}
+.overlay-9 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: 1s ease;
+  z-index: 222;
+}
+.overlay-9 a {
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-color: #927b5b;
+  color: white;
+  margin-left: auto;
+  border-radius: 50%;
+  margin-top: 7px;
+  font-size: 22px;
+}
+.overlay-9 a i {
+  line-height: 40px;
+}
+.box-19:hover .overlay-9 {
+  opacity: 1;
+}
+.out-text {
+  padding: 5px;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 10;
+}
+.out-text h2 {
+  color: white;
+  transition: 1s ease;
+}
+.out-text p {
+  color: #927b5b;
+  font-size: 19;
+  font-weight: 800;
+  transition: 1s ease;
+}
+.box-19::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 1s ease;
+  position: absolute;
+  border-radius: 10px;
+}
+.box-19::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 1s ease;
+  position: absolute;
+  border-radius: 10px;
+}
+.box-19:hover::after {
+  height: 100%;
+  opacity: 1;
+}
+.box-19:hover::before {
+  height: 100%;
+  opacity: 1;
+}
+.box-19:hover .out-text h2 {
+  color: #927b5b;
+}
+.box-19:hover .out-text p {
+  color: #ffffff;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+.Special-cars10 {
+  width: 80%;
+  height: 65%;
+  margin: 50px auto;
+}
+.information-car {
+  width: 30%;
+  border-bottom: 3px solid #a18a6a;
+  border-top: 3px solid #a18a6a;
+  height: 100%;
+  float: left;
+  padding: 15px;
+  position: relative;
+}
+.car10 {
+  margin: 0 5%;
+}
+.img10 {
+  width: 250px;
+  height: 200px;
+  background-image: url(../css/img/e-tron\ 2024.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+.img210 {
+  background-image: url(../css/img/17aabd540015b660ad95401e105e2a3b.jpg);
+}
+.img310 {
+  background-image: url(../css/img/f402602f63c3efe038835657819c0456.jpg);
+}
+
+.content-10 {
+  margin-top: 15px;
+  font-size: 19px;
+}
+.content-10 ul {
+  list-style: none;
+}
+.content-10 ul i {
+  list-style: none;
+  font-size: 20px;
+  color: #a18a6a;
+}
+.content-10 ul li {
+  display: inline-block;
+  font-weight: 650;
+}
+.stars {
+  margin-top: 10px;
+  color: #a18a6a;
+}
+.st10 {
+  color: rgb(160, 160, 160);
+}
+.content-10 h3 {
+  margin: 5px 0;
+}
+.content-10 p {
+  width: 70%;
+  line-height: 25px;
+}
+.information-car a {
+  text-align: center;
+  height: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #a18a6a;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 100;
+}
+.information-car::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(88, 88, 88, 0.4);
+  opacity: 0;
+  transition: 0.7s ease;
+  position: absolute;
+}
+.information-car:hover::after {
+  height: 100%;
+  opacity: 1;
+}
+/* //////////////////////////////////////////////////////// */
+.footer {
+  width: 100%;
+  height: 380px;
+  background-color: rgba(194, 193, 199, 0.8);
+}
+.centar-footer {
+  text-align: center;
+}
+.centar-footer img {
+  padding-top: 60px;
+}
+.icon-10 {
+  display: inline-block;
+  font-size: 25px;
+  margin-left: 10px;
+}
+.icon-10 a {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  background-color: #927b5b;
+  border-radius: 50%;
+  display: block;
+  color: #fff;
+  padding-top: 10px;
+  position: relative;
+}
+.centar-footer p {
+  margin-top: 20px;
+  font-weight: 700;
+}
+.icon-10 a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.icon-10 a:hover::after {
+  width: 49px;
+  height: 49px;
+  opacity: 1;
+  border: 2px solid white;
+}
